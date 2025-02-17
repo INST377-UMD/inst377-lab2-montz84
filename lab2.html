@@ -1,0 +1,53 @@
+<html>
+    <head>
+        <title>Lab 2 HTML & CSS Form</title>
+        <style>
+
+            /* background color for whole page */
+            body{
+                background-color: moccasin;
+            }
+
+            /* submit button */
+            input[type=submit]
+            {
+                background-color: #04AA6D;
+                margin-top: 10px;
+                margin-left: 15px;
+                transition-duration: 0.4s;
+                
+            }
+            input[type=submit]:hover {
+                background-color: white;
+            }
+
+            /* text box color and font size*/
+            .textboxcolorchange {
+                background-color: lightskyblue;
+                margin-top: 15px;
+                margin-right: 15px;
+                margin-bottom: 25px;
+                font-size: larger;
+            }
+            
+        </style>
+    </head>
+
+    <body>
+        <h1>Practice Form!</h1>
+        <form name="Lab2Form" method="get" action="lab2page2.html">
+<div class="textboxcolorchange">
+            <label for="Name">Name:</label>
+            <input type="Text" required>
+            <br>
+
+            <label for="emailaddress">Email:</label>
+            <input type="text" id="emailaddress" required>
+            <br>
+        </div>
+            <hr>
+            
+            <input type="submit" value="Submit Form">
+        </form>
+    </body>
+</html>
